@@ -1,7 +1,7 @@
 Ceylan
 ======
 
-This project has for goal to provide some free, portable, high-level, open-source, general-purpose developments.	 
+This project has for goal to provide some free, portable, high-level, free software, general-purpose developments.	 
 
 **Ceylan** currently comprises 6 sub-projects:
 
