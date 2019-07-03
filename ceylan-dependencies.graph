@@ -1,0 +1,52 @@
+digraph D {
+
+  label = "Dependencies of Ceylan-based Projects\n(\"A -> B\" means \"B depends on A\")";
+  labelloc = "t"; // place the label at the top (b seems to be default)
+
+  node [shape=record fontname="Sans serif" fontsize="8"];
+  rankdir=BT;
+
+  //{ rank=same c py sh er };
+
+  subgraph cluster_ceylan
+  {
+
+	label = "Ceylan";
+	color = "blue";
+	labelloc = "t";
+
+	hvy [ label = "Ceylan-Heavy" ];
+	hul [ label = "Ceylan-Hull" ];
+	sna [ label = "Ceylan-Snake" ];
+	myr [ label = "Ceylan-Myriad" ];
+	wpr [ label = "Ceylan-WOOPER" ];
+	trc [ label = "Ceylan-Traces" ];
+	sea [ label = "Ceylan-Seaplus" ];
+	mob [ label = "Ceylan-Mobile" ];
+
+  }
+
+
+  subgraph cluster_lang
+  {
+
+	label = "Languages";
+	labelloc = "t";
+
+	c  [ label = "C/C++" ];
+	py [ label = "Python" ];
+	sh [ label = "Shell" ];
+	er [ label = "Erlang" ];
+
+  }
+
+  c -> hvy;
+  sh -> hul;
+  py -> sna;
+  er -> myr;
+  myr -> wpr;
+  wpr -> trc;
+  { myr, c} -> sea;
+  sea -> mob;
+
+}
