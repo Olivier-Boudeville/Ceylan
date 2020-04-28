@@ -1,1 +1,1 @@
-../Ceylan-Myriad/doc/GNUmakerules-docutils.inc
+../myriad/doc/GNUmakerules-docutils.inc
