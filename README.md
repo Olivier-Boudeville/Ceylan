@@ -17,6 +17,3 @@ This repository is just an umbrella, in the sense it is mostly empty: its purpos
  - [Ceylan-Mobile](https://github.com/Olivier-Boudeville/Ceylan-Mobile): facilities to **control mobile phones and 3G keys from Erlang**
 
 ![Ceylan dependencies](ceylan-dependencies.png "Ceylan Dependencies")
-
-This repository is just an umbrella, in the sense it is mostly empty: its purpose is only to federate and give access to the Ceylan-* actual subprojects. 
-
