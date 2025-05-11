@@ -15,14 +15,17 @@ digraph D {
 	color = "blue";
 	labelloc = "t";
 
-	hvy [ label = "Ceylan-Heavy" ];
 	hul [ label = "Ceylan-Hull" ];
-	sna [ label = "Ceylan-Snake" ];
+	how [ label = "Ceylan-Howtos" ];
 	myr [ label = "Ceylan-Myriad" ];
 	wpr [ label = "Ceylan-WOOPER" ];
 	trc [ label = "Ceylan-Traces" ];
+	lec [ label = "Ceylan-LEEC" ];
+	ocn [ label = "Ceylan-Oceanic" ];
 	sea [ label = "Ceylan-Seaplus" ];
 	mob [ label = "Ceylan-Mobile" ];
+	hvy [ label = "Ceylan-Heavy" ];
+	sna [ label = "Ceylan-Snake" ];
 
   }
 
@@ -44,9 +47,9 @@ digraph D {
   sh -> hul;
   py -> sna;
   er -> myr;
-  myr -> wpr;
+  myr -> {wpr,lec,ocn};
   wpr -> trc;
-  { myr, c} -> sea;
+  {myr, c} -> sea;
   sea -> mob;
 
 }
